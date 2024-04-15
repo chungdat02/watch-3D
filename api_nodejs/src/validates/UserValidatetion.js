@@ -4,6 +4,8 @@ const EmtyInput = () => {
     message: "The input is required",
   });
 };
+
+// check code 
 module.exports = {
   EmtyInput,
 };

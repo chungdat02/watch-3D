@@ -10,4 +10,5 @@ const routes = (app) => {
   app.use("/api/order", OrderRouter);
   app.use("/api/review", ReviewRouter);
 };
+
 module.exports = routes;

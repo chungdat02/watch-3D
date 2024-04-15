@@ -3,7 +3,9 @@ const Order = require('../models/OrderModel');
 const OrderController = {
   createOrder: async (req, res) => {
     try {
+      // kiểm tra err 
       console.log(req.body);
+
       const newOrder = await Order.create(req.body);
       return res.status(201).send(newOrder);
     } catch (error) {

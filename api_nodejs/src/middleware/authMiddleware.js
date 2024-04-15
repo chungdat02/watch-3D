@@ -24,6 +24,7 @@ const authMiddleware = (req, res, next) => {
     if (user) {
       req.userId = user.id;
       next();
+      // chay next funct tiep theo
     } else {
       return res.status(404).json({
         message: "The authemtication",
