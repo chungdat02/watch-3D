@@ -64,10 +64,12 @@ Watch 3D là một trang web bán đồng hồ trực tuyến với chức năng
 
 ## Liên Hệ
 
-Nếu bạn có bất kỳ câu hỏi hoặc đề xuất nào, xin vui lòng liên hệ với chúng tôi qua email: 
-[Email](mailto:chungdatcntt1808@gmail.com)
-[Email](mailto:badat420202@gmail.com)
-[Email](mailto:Tranhai2266@gmail.com)
+Nếu bạn có bất kỳ câu hỏi hoặc đề xuất nào, xin vui lòng liên hệ với chúng tôi qua email
+Thành viên trong nhóm:  
+[Cao Chung Đạt](mailto:chungdatcntt1808@gmail.com)  
+[Nguyễn Bá Đạt](mailto:badat420202@gmail.com)  
+[Cao Trí Tính](mailto:Tranhai2266@gmail.com)
 
 Cảm ơn thầy đã xem !!!
+
 
