@@ -2,6 +2,7 @@ const Review = require('../models/ReviewModel');
 
 const ReviewController = {
   createReview: async (req, res) => {
+    console.log(req.Review); // check Review truoc71 khi send 
     try {
       const { product, rating, comment } = req.body;
       const newReview = await Review.create({
