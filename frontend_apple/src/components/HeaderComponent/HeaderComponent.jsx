@@ -12,7 +12,7 @@ import {
   ShoppingCartOutlined,
 } from "@ant-design/icons";
 import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
-import tiki from "../../assets/images/logo_tiki.png";
+import tiki from "../../assets/images/logo_watch.png"; // logo web 
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../redux/userSlice";
