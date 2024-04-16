@@ -58,7 +58,7 @@ Watch 3D là một trang web bán đồng hồ trực tuyến với chức năng
 
 ## Yêu Cầu Kỹ Thuật
 
-- Trang web được xây dựng bằng HTML, CSS, JavaScript, TypeScript.
+- Trang web được xây dựng bằng HTML, CSS, JavaScript, React.
 - Sử dụng thư viện JavaScript để hiển thị sản phẩm 3D, ví dụ như Three.js.
 - Kết nối với cơ sở dữ liệu để lưu trữ thông tin sản phẩm và thông tin đơn hàng của khách hàng qua MongoDB.
 
@@ -71,5 +71,3 @@ Thành viên trong nhóm:
 [Cao Trí Tính](mailto:Tranhai2266@gmail.com)
 
 Cảm ơn thầy đã xem !!!
-
-
