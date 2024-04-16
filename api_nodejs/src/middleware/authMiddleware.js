@@ -3,17 +3,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const authMiddleware = (req, res, next) => {
-  
-  const authorization = req?.headers?.authorization;
-  console.log(authorization);
-  if (!authorization) {
-    return res.status(401).json({
-      message: "The token is required",
-      status: "ERROR",
-    });
-  };
-  const token = authorization.split(" ")[1];
-
+  const token = req.headers.token.split(" ")[1];
   jwt.verify(token, process.env.ACCESS_TOKEN, function (err, user) {
     if (err) {
       return res.status(404).json({
@@ -21,10 +11,8 @@ const authMiddleware = (req, res, next) => {
         status: "ERROR",
       });
     }
-    if (user) {
-      req.userId = user.id;
+    if (user?.isAdmin) {
       next();
-      // chay next funct tiep theo
     } else {
       return res.status(404).json({
         message: "The authemtication",
@@ -34,24 +22,16 @@ const authMiddleware = (req, res, next) => {
   });
 };
 const authUserMiddleware = (req, res, next) => {
-  const authorization = req.headers?.authorization;
-  if (!authorization) {
-    return res.status(401).json({
-      message: "The token is required",
-      status: "ERROR",
-    });
-  }
-  const token = authorization.split(" ")[1];
+  const token = req.headers.token.split(" ")[1];
+  const userId = req.params.id;
   jwt.verify(token, process.env.ACCESS_TOKEN, function (err, user) {
-    
     if (err) {
       return res.status(404).json({
         message: "The authemtication",
         status: "ERROR",
       });
     }
-    if (user?.isAdmin) {
-      req.userId = user.id;
+    if (user?.isAdmin || user?.id === userId) {
       next();
     } else {
       return res.status(404).json({
