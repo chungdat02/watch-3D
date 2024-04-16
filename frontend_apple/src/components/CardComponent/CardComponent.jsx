@@ -25,12 +25,6 @@ const CardComponent = ({ data }) => {
     setListIdCart(listId);
   }, [cart]);
 
-//   const redirectToProductPage = () => {
-//     window.location.href = 'http://localhost:5500/frontend_apple/clock/clock.html';
-//     console.log(window.location.href);
-// };
-
-
   return (
     <div>
       <WrapperCardStyle
@@ -66,7 +60,6 @@ const CardComponent = ({ data }) => {
               background: "green",
               borderRadius: "10px",
               color: "white",
-              marginBottom: "5px", // Thêm khoảng cách giữa các nút
             }}
           >
             Đã có trong giỏ hàng
@@ -79,31 +72,15 @@ const CardComponent = ({ data }) => {
               background: "red",
               borderRadius: "10px",
               color: "white",
-              marginBottom: "5px", // Thêm khoảng cách giữa các nút
             }}
             onClick={handleAddToCart}
           >
             Thêm giỏ hàng
           </button>
         )}
-        <a
-          style={{
-            display: "block",
-            textAlign: "center",
-            width: "100%",
-            lineHeight: "35px",
-            background: "blue",
-            borderRadius: "10px",
-            color: "white",
-          }}
-         href={`${data?.view3d ? `http://localhost:5500/frontend_apple/clock/${data.view3d}` : "#!"}`}
-        >
-          Xem chi tiết
-        </a>
       </WrapperCardStyle>
     </div>
   );
 };
 
 export default CardComponent;
-/// mong không lỗi là ngon
