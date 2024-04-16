@@ -34,15 +34,15 @@ const HomePage = () => {
             width: "100%",
             margin: "0 auto",
             marginTop: "20px",
-          }}
+          }} 
         >
           <SliderComponent arrImages={[slider1, slider2, slider3]} />
           <WrapperProducts>
             {arrayProduct?.map((e) => (
               <CardComponent key={e?._id} data={e} />
-            ))}
+            ))} 
           </WrapperProducts>
-          <div
+          <div 
             style={{
               width: "100%",
               display: "flex",

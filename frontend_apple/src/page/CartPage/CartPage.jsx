@@ -98,17 +98,17 @@ const CartPage = () => {
           </Grid>
           <Grid item xs={3}>
             <Typography fontSize={14} fontWeight={600}>
-              Số lượng
+              Số lượng 
             </Typography>
           </Grid>
           <Grid item xs={2}>
             <Typography fontSize={14} fontWeight={600}>
-              Thành tiền
+              Thành tiền 
             </Typography>
           </Grid>
           <Grid item xs={2}>
             <Typography fontSize={14} fontWeight={600}>
-              Hành động
+              Hành động 
             </Typography>
           </Grid>
         </Grid>
