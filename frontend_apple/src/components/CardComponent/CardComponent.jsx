@@ -30,6 +30,7 @@ const CardComponent = ({ data }) => {
 //     console.log(window.location.href);
 // };
 
+
   return (
     <div>
       <WrapperCardStyle
@@ -105,3 +106,4 @@ const CardComponent = ({ data }) => {
 };
 
 export default CardComponent;
+/// mong không lỗi là ngon
